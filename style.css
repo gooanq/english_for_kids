@@ -347,7 +347,7 @@ html {
     display: flex;
     justify-content: flex-start; }
     .statistic .table-area table {
-      width: 98.5%;
+      width: 100%;
       min-width: 600px;
       border-collapse: collapse;
       font-size: 2rem;
@@ -368,6 +368,13 @@ html {
       .statistic .table-area table tbody tr:hover {
         background: linear-gradient(to left, #377dda 5%, #0c57b8 65%, #3e78c4 100%);
         color: white; }
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column; }
 
 .container {
   width: 100%;
@@ -412,6 +419,7 @@ html {
   border-radius: 30px; }
 
 footer {
+  align-self: stretch;
   position: abolute;
   left: 0;
   bottom: 0;
