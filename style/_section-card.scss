@@ -1,0 +1,54 @@
+.section-card {
+	max-width: 300px;
+	min-width: 300px;
+	height: 300px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	row-gap: 20px;
+	background: linear-gradient(to bottom, #1e4e85 5%, #0992b4 50%, white 50%);
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+	border-radius: 10px;
+	transition: 0.8s;
+
+	&.train{
+		background: linear-gradient(to bottom, #e47d54 5%, #b42b2b 50%, white 50%);
+	}
+
+	&:hover {
+		box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+	}
+
+	&__image {
+		object-fit: cover;
+		width: 200px;
+		height: 200px;
+		border-radius: 50%;
+	}
+
+	&__name {
+		font-size: 2.5rem;
+		letter-spacing: 0.25rem;
+		text-transform: uppercase;
+		color: orange;
+	}
+
+	&__button {
+		width: 50%;
+		font-size: 2.5rem;
+		letter-spacing: 0.2rem;
+		text-transform: lowercase;
+		color: white;
+		background: orange;
+		padding: 0.5rem;
+		outline: none;
+		border: none;
+		box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+		transition: 0.8s;
+
+		&:hover {
+			background-color: #0992b4;
+		}
+	}
+}

@@ -1,0 +1,23 @@
+.stars{
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+	justify-content: flex-start;
+	overflow: hidden;
+	height: 40px;
+	padding: 0 15.1px 0 15.1px;
+
+	.star__win{
+		min-width:40px;
+		height: 40px;
+		background-image: url('/assets/star-win.svg');
+		background-size: cover;
+	}
+
+	.star{
+		min-width:40px;
+		height: 40px;
+		background-image: url('/assets/star.svg');
+		background-size: cover;
+	}
+}

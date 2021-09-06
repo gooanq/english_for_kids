@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<script src="app.js" defer></script>
+	<title>English For Kids</title>
+</head>
+
+<body class="scroll">
+	<div class="container">
+
+		<div class="app">
+			<div class="buttons">
+				<div class="burger">
+					<span class="line"></span>
+					<span class="line"></span>
+					<span class="line"></span>
+				</div>
+				<div class="mode">
+					<div class="mode__toggle"><div class="circle"></div></div>
+					<span class="mode__train">Train</span>
+					<span class="mode__learn">Learn</span>
+				</div>
+			</div>
+			<div class="stars"></div>
+			<div class="cards-field shown"></div>
+			<div class="statistic">
+				<div class="statistic-buttons">
+					<button class="repeat">repeat<br>difficult</button>
+					<button class="button-reset">reset</button>
+				</div>
+				<div class="table-area scroll">
+					<table class="statistic__table">
+						<thead>
+							<tr>
+								<th>word</th>
+								<th>translation</th>
+								<th>category</th>
+								<th data-number=true>click</th>
+								<th data-number=true> correct</th>
+								<th data-number=true>error</th>
+								<th data-number=true>rate</th>
+							</tr>
+						</thead>
+						<tbody></tbody>
+					</table>
+				</div>
+			</div>
+			<div class="buttons-bottom">
+				<button class="button-start">start game</button>
+				<button class="button-repeat">
+					<img src="/assets/repeat.svg" alt="">
+				</button>
+			</div>
+			<div class="burger-menu"></div>
+			<div class="endgame-modal-cover">
+				<div class="endgame-modal">
+					<div class="endgame-modal__info">Congratulation!</div>
+					<img class="endgame-modal__picture" src="assets/lose.jpg" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="container">
+			<a href="https://rs.school/"><img src="assets/logo.svg" alt="" width="150px" height="100px"></a>
+			<div class="footer-text">
+				<p>Created by <a href="https://github.com/gooanq" target="_blank">Ivan Huzikov</a></p>
+				<p>for <a href="https://rs.school/" target="_blank"> The Rolling Scopes School</a> </p>
+				<p>JS/FRONT-END 2020Q3</p>
+			</div>
+		</div>
+	</footer>
+</body>
+
+</html>

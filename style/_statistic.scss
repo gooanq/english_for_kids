@@ -1,0 +1,73 @@
+.statistic {
+	display:none;
+	&.shown{
+		display: block;
+	}
+	&-buttons {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 10px;
+	}
+
+	button {
+		text-transform: uppercase;
+		font-size: 1.5rem;
+		letter-spacing: 0.3rem;
+		color: white;
+		font-weight: 600;
+		padding: 5px 15px 5px 15px;
+		border-radius: 2px;
+		outline: none;
+		border: none;
+		background: linear-gradient(to right, #e47d54 50%, #b42b2b 100%);
+		box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
+
+		&:hover {
+			box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.2);
+		}
+	}
+
+	.table-area {
+		width: 100%;
+		overflow-x: scroll;
+		//text-align: center;
+		display: flex;
+		justify-content: flex-start;
+		
+		table {
+			width: 98.5%;
+			min-width: 600px;
+			border-collapse: collapse;
+			font-size: 2rem;
+			user-select: none;
+
+			td, th {
+				border: 1px solid #c98546;
+				text-align: center;
+				padding: 3px;
+			}
+			thead {
+				th{
+					padding: 3px 10px 3px 10px;
+					font-size: 2.5rem;
+					letter-spacing: 0.2rem;
+
+					&:hover{
+						background: linear-gradient(to left, #377dda 5%, #0c57b8 65%, #3e78c4 100%);
+					}
+				}
+				background-color: #c98546;
+				color: white;
+			}
+
+			tbody {
+				tr:hover {
+					background: linear-gradient(to left, #377dda 5%, #0c57b8 65%, #3e78c4 100%);
+					color: white;
+				}
+			}
+		}
+	}
+}
